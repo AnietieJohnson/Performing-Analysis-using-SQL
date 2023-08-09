@@ -1,4 +1,4 @@
-# STUDENT REOCRD DATA BASE PROJECT
+# STUDENT RECORD DATA BASE PROJECT
 ## Introduction
 This project aims to showcase the creation and management of a database designed to store essential information about students. The database will consist of three main tables: Students Info, Health Records, and Performance. This project requires setting up a database, creating tables, defining constraints, and making modifications as required.
 ## Project Objective
@@ -14,7 +14,14 @@ This project aims to showcase the creation and management of a database designed
    - Change column name ‘’Subject” to ‘’Course” 
    - Drop the “Age” column from the ‘Students Info’ table
 ## Solutions
-1. To create  
-![]()
+1. To create the data base named “Students Record”
+
+   I used the syntax:
+  _CREATE Database database_name_
+
+  i.e 
+ 
+ CREATE Database Student_Records;   
+![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/Creating%20a%20database.png)
 
 
