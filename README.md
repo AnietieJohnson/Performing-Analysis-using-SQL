@@ -66,12 +66,11 @@ I used the syntax: CREATE Table table_name (column1 datatype Constraint, column2
 The *_default constraint_* allows the score column to return '0' as a value once value isn't inputted while the _unique constraint_ makes sure there is no duplicate vaues.
 ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/Creating%20performance.png)
 
-Applying Modification
-Change column name ‘’Subject” to ‘’Course” 
+Changing column name ‘’Subject” to ‘’Course” 
 ###### syntax :EXEC sp_rename 'student_info.Subject', 'Course', 'Column';
 ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/Renaming%20%20subject%20to%20course.png)
 
-Drop the “Age” column from the ‘Students Info’ table
+Droping the “Age” column from the ‘Students Info’ table
 ###### syntax : ALTER Table student_info DROP COLUMN Age;
 ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/dropping%20the%20column%20age.png)
 
