@@ -70,7 +70,7 @@ Changing column name ‘’Subject” to ‘’Course”
 ###### syntax :EXEC sp_rename 'student_info.Subject', 'Course', 'Column';
 ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/Renaming%20%20subject%20to%20course.png)
 
-Droping the “Age” column from the ‘Students Info’ table
+Dropping the “Age” column from the ‘Students Info’ table
 ###### syntax : ALTER Table student_info DROP COLUMN Age;
 ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/dropping%20the%20column%20age.png)
 
