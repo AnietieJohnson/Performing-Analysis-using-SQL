@@ -77,6 +77,7 @@ The *_default constraint_* allows the score column to return '0' as a value once
 ###### syntax : ALTER Table student_info DROP COLUMN Age;
 ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/dropping%20the%20column%20age.png)
 
+
 ## Project Objective 2
 The second objective of this project is to demonstrate the utilization of SQL queries to extract specific information from the Employee and Salary tables. By executing a series of well-defined SQL commands, we aim to achieve the tasks:
 1. Select the employee table and show the data where city is Mumbai and Delhi. 
@@ -104,3 +105,13 @@ The second objective of this project is to demonstrate the utilization of SQL qu
 - Extracting rows from the Salary table where the salary is less than 1 million and sorting them in ascending order.
   ###### Syntax:SELECT * FROM Salary WHERE Base <1000000 ORDER BY bASE ASC;
   ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/salaries%20above%201M%20order%20by%20ASC.png)
+5. Modify email column of the employee table to contain just email without ‘@gmail.com’
+- Altering the email column in the Employee table to retain only the email addresses without the domain ('@gmail.com').
+  ###### Syntax:UPDATE Employee
+   ###### SET email = SUBSTRING(email, 1, CHARINDEX('@', email) - 1)
+    ###### WHERE CHARINDEX('@', email) > 0;
+
+  Before removing '@gmail.com'                                            | After Removing '@gmail.com
+  ----------------------------------------------------------------------:|:----------------------------------------------------------------------
+![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/before%20%20removing%20'%40gmail'.png)  |  ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/after%20update%2C%20removing%20'%40gmail.com'.png)
+-----------------------------------------------------------------------------------:|:----------------------------------------------------------------------------
