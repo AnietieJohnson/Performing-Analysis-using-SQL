@@ -97,6 +97,7 @@ The second objective of this project is to demonstrate the utilization of SQL qu
 - Extracting rows from the Employee table where the first name contains both 'a' and 'e'
   ###### Syntax: SELECT * FROM Employee WHERE name LIKE '%ae%';
 ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/employees%20having%20a%20%26%20e%20in%20their%20first%20name.png)
+
 **3. Subset the employee table to have employee with date of birth above 1990**
 - Creating a subset of the Employee table to include only those employees born after the year 1990.
   ###### Syntax: SELECT * FROM Employee WHERE date_of_birth >'1990-12-31';
