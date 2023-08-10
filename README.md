@@ -106,6 +106,7 @@ The second objective of this project is to demonstrate the utilization of SQL qu
 - Extracting rows from the Salary table where the salary is less than 1 million and sorting them in ascending order.
   ###### Syntax:SELECT * FROM Salary WHERE Base <1000000 ORDER BY bASE ASC;
   ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/salaries%20above%201M%20order%20by%20ASC.png)
+
 **5. Modify email column of the employee table to contain just email without ‘@gmail.com’**
 - Altering the email column in the Employee table to retain only the email addresses without the domain ('@gmail.com').
   ###### Syntax:UPDATE Employee
