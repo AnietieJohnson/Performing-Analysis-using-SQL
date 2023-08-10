@@ -69,11 +69,11 @@ iii. I Added the individual constraint where required, Then inserted each column
 The *_default constraint_* allows the score column to return '0' as a value once value isn't inputted while the _unique constraint_ makes sure there is no duplicate vaues.
 ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/Creating%20performance.png)
 
-6A. Changing column name ‘’Subject” to ‘’Course” 
+**6A. Changing column name ‘’Subject” to ‘’Course”** 
 ###### syntax :EXEC sp_rename 'student_info.Subject', 'Course', 'Column';
 ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/Renaming%20%20subject%20to%20course.png)
 
-6B. Dropping the “Age” column from the ‘Students Info’ table
+**6B. Dropping the “Age” column from the ‘Students Info’ table**
 ###### syntax : ALTER Table student_info DROP COLUMN Age;
 ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/dropping%20the%20column%20age.png)
 
@@ -87,25 +87,25 @@ The second objective of this project is to demonstrate the utilization of SQL qu
 5. Modify email column of the employee table to contain just email without ‘@gmail.com’
 
 ## Solutions
-1. Select the employee table and show the data where city is Mumbai and Delhi.
+**1. Select the employee table and show the data where city is Mumbai and Delhi.**
 - Filtering the Employee Table by City
 - Selecting rows from the Employee table where the city is either Mumbai or Delhi.
   ###### Syntax: SELECT * FROM Employee WHERE City= 'Mumbai' OR City = 'Delhi';
 ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/employee%20in%20mumbai%20or%20delhi.png)
-2. Select the employee table where employee first name have both ‘a’ and ‘e’  in them.
+**2. Select the employee table where employee first name have both ‘a’ and ‘e’  in them.**
 - Filtering the Employee Table by First Name Pattern (Firtname column here is "name")
 - Extracting rows from the Employee table where the first name contains both 'a' and 'e'
   ###### Syntax: SELECT * FROM Employee WHERE name LIKE '%ae%';
 ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/employees%20having%20a%20%26%20e%20in%20their%20first%20name.png)
-3. Subset the employee table to have employee with date of birth above 1990
+**3. Subset the employee table to have employee with date of birth above 1990**
 - Creating a subset of the Employee table to include only those employees born after the year 1990.
   ###### Syntax: SELECT * FROM Employee WHERE date_of_birth >'1990-12-31';
   ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/employee%20with%20date%20of%20birth%20above%201990.png)
-4. Subset the salary table to show salaries less than 1 million and sort in an ascending order  
+**4. Subset the salary table to show salaries less than 1 million and sort in an ascending order** 
 - Extracting rows from the Salary table where the salary is less than 1 million and sorting them in ascending order.
   ###### Syntax:SELECT * FROM Salary WHERE Base <1000000 ORDER BY bASE ASC;
   ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/salaries%20above%201M%20order%20by%20ASC.png)
-5. Modify email column of the employee table to contain just email without ‘@gmail.com’
+**5. Modify email column of the employee table to contain just email without ‘@gmail.com’**
 - Altering the email column in the Employee table to retain only the email addresses without the domain ('@gmail.com').
   ###### Syntax:UPDATE Employee
    ###### SET email = SUBSTRING(email, 1, CHARINDEX('@', email) - 1)
