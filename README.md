@@ -11,8 +11,8 @@ This project aims to showcase the creation and management of a database designed
 4. Where a student has no score, it should be ‘0’ by default
 5. Add a constraint that prevents the ID and Subject from taking null values
 6. Apply the following modifications to the table
-   - Change column name ‘’Subject” to ‘’Course” 
-   - Drop the “Age” column from the ‘Students Info’ table
+   A. Change column name ‘’Subject” to ‘’Course” 
+   B. Drop the “Age” column from the ‘Students Info’ table
 ## Solutions
 ##### 1. To create the data base named “Students Record”
    I used the syntax:
@@ -69,11 +69,11 @@ iii. I Added the individual constraint where required, Then inserted each column
 The *_default constraint_* allows the score column to return '0' as a value once value isn't inputted while the _unique constraint_ makes sure there is no duplicate vaues.
 ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/Creating%20performance.png)
 
-Changing column name ‘’Subject” to ‘’Course” 
+6A. Changing column name ‘’Subject” to ‘’Course” 
 ###### syntax :EXEC sp_rename 'student_info.Subject', 'Course', 'Column';
 ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/Renaming%20%20subject%20to%20course.png)
 
-Dropping the “Age” column from the ‘Students Info’ table
+6B. Dropping the “Age” column from the ‘Students Info’ table
 ###### syntax : ALTER Table student_info DROP COLUMN Age;
 ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/dropping%20the%20column%20age.png)
 
