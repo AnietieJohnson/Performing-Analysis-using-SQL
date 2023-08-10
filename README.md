@@ -19,6 +19,7 @@ This project aims to showcase the creation and management of a database designed
 - Use of Constraints
 - Modifying Columns
 - Dropping Columns
+
 Through this task, I showcased my understanding of database design principles, constraints, data manipulation, and the ability to modify table structures. These concepts form the foundation of SQL-based data management and analysis, reflecting a key set of skills in the realm of relational databases.
 ## Solutions
 ##### 1. To create the data base named “Students Record”
@@ -39,14 +40,15 @@ Through this task, I showcased my understanding of database design principles, c
  ######  Syntax: INSERT INTO table_name (column1, column2, column3, ...)
 ######       VALUES (value1, value2, value3, ...);
 
-### Paying attention to questions:
+**_Paying attention to questions:_**
 ##### 3. The ID has to be unique
 ##### 4. Where a student has no score, it should be ‘0’ by default
 ##### 5. Add a constraint that prevents the ID and Subject from taking null values
 
-iii. I Added the individual constraint where required, Then inserted each column's information.
+iii. I Added the individual constraint where required.
 
- iv.  I used the syntax: CREATE Table table_name (column1 datatype Constraint, column2 datatype, column3 datatype, column4 datatype, column5 datatype constraint);
+ iv.  Then inserted each column's information 
+ ###### I used the syntax: CREATE Table table_name (column1 datatype Constraint, column2 datatype, column3 datatype, column4 datatype, column5 datatype constraint);
 - ###### i.e *for Student info:* CREATE Table Student_Info(Student_ID INTEGER Unique Not Null, Gender VARCHAR(50), Name VARCHAR(50), Age INTEGER, Subject VARCHAR(50) Not Null);
 ###### INSERT INTO Student_Info(Student_ID, Gender, Name, Age, Subject)
 ###### VALUES (1, 'FEMALE', 'ANNIE JOHNSON', 17, 'Mathematics'),
@@ -97,7 +99,8 @@ The second objective of this project is to demonstrate the utilization of SQL qu
 - String Manipulation with LIKE Operator
 - Date Comparison
 - Sorting Data with ORDER BY Clause
-- Updating Data with UPDATE Statement
+
+Updating Data with UPDATE Statement
 Collectively, this task showcase my proficiency in querying and manipulating data using SQL. I demonstrated the ability to retrieve specific data subsets, filter rows based on conditions, work with patterns in strings, compare dates, sort data, and perform data updates. These skills are crucial for effective data analysis and management using SQL
 
 ## Solutions
