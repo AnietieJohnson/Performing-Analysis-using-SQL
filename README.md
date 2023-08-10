@@ -112,6 +112,5 @@ The second objective of this project is to demonstrate the utilization of SQL qu
     ###### WHERE CHARINDEX('@', email) > 0;
 
   Before removing '@gmail.com'                                            | After Removing '@gmail.com
-  ----------------------------------------------------------------------:|:----------------------------------------------------------------------
 ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/before%20%20removing%20'%40gmail'.png)  |  ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/after%20update%2C%20removing%20'%40gmail.com'.png)
 -----------------------------------------------------------------------------------:|:----------------------------------------------------------------------------
