@@ -1,6 +1,6 @@
 # STUDENT RECORD DATABASE PROJECT
 ## Introduction
-This project aims to showcase the creation and management of a database designed to store essential information about students. The First database will consist of three main tables: Students Info, Health Records, and Performance. I would also dive into importing tables (Employee and Salary) into a Second database to extract and uncover valuable insights and patterns within the data using SQL queries. This project requires setting up databases, creating tables, importing tables, defining constraints, and making modifications as required.
+This project aims to showcase the creation and management of a database designed to store essential information. The First database named 'Student_Records' will consist of three main tables: Students Info, Health Records, and Performance. I would also dive into importing tables (Employee and Salary) into a Second database named 'Business' to extract and uncover valuable insights and patterns within the data using SQL queries. This project requires setting up databases, creating tables, importing tables, defining constraints, and making modifications as required.
 ## Project Objective 1
 1. Create a Database named “Students Record”
 2. Create the following tables in the database create:
