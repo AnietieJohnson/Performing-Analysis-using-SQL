@@ -38,7 +38,7 @@ Paying attention to questions:
 I Added the individual constraint where required, Then inserted each column's information.
 
 I used the syntax: CREATE Table table_name (column1 datatype Constraint, column2 datatype, column3 datatype, column4 datatype, column5 datatype constraint);
-###### i.e *for Student info:* CREATE Table Student_Info(Student_ID INTEGER Unique Not Null, Gender VARCHAR(50), Name VARCHAR(50), Age INTEGER, Subject VARCHAR(50) Not Null);
+###### - i.e *for Student info:* CREATE Table Student_Info(Student_ID INTEGER Unique Not Null, Gender VARCHAR(50), Name VARCHAR(50), Age INTEGER, Subject VARCHAR(50) Not Null);
 ###### INSERT INTO Student_Info(Student_ID, Gender, Name, Age, Subject)
 ###### VALUES (1, 'FEMALE', 'ANNIE JOHNSON', 17, 'Mathematics'),
  ######      (2, 'MALE', 'VICTOR JOHNSON', 18, 'English'),
@@ -48,7 +48,7 @@ I used the syntax: CREATE Table table_name (column1 datatype Constraint, column2
 
 
 ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/creating%20student_info.png)
-###### *for Health Records:* CREATE Table Health_Records(Student_ID INTEGER Unique Not Null, Blood_Group VARCHAR(50), Height Decimal(2,1), Weight Decimal(3,1));
+###### - *for Health Records:* CREATE Table Health_Records(Student_ID INTEGER Unique Not Null, Blood_Group VARCHAR(50), Height Decimal(2,1), Weight Decimal(3,1));
 ###### INSERT INTO Health_Records(Student_ID, Blood_Group, Height, Weight)
 ###### VALUES (1, 'O+', 5.4, 63.2),
 ######       (2, 'A', 6.2, 65.0),
@@ -56,7 +56,7 @@ I used the syntax: CREATE Table table_name (column1 datatype Constraint, column2
 ######	     (4, 'B', 6.0, 64.3),
 ######	     (5, 'O-', 6.4, 68.1);
 ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/creating%20health_records.png)
-###### *Performance:* CREATE Table Performance(Student_ID INTEGER Unique Not Null, Score INTEGER Default 0, Grade VARCHAR(50));
+###### - *Performance:* CREATE Table Performance(Student_ID INTEGER Unique Not Null, Score INTEGER Default 0, Grade VARCHAR(50));
 ###### INSERT INTO Performance(Student_ID, Score, Grade)
 ###### VALUES (1,' ' ,'D'),
 ######       (2, 66, 'B'),
