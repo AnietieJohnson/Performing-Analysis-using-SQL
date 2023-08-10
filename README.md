@@ -153,6 +153,7 @@ The third objective ofthis project, our main objectives are to:
 - We begin by determining the total number of employees in our dataset. This foundational query sets the stage for further analysis and provides a clear understanding of the dataset's scale.
 ###### Syntax: SELECT COUNT(empID) FROM Employee
 ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/Count%20of%20Employee.png)
+
 **2. Identify the top 5 cities with the highest employee counts and filter this list to include only cities with more than 15 employees.**
 - Our journey continues as we identify the top 5 cities with the highest number of employees. This initial list is then refined to spotlight cities with more than 15 employees, offering insights into where our workforce is concentrated.
 ###### Syntax: SELECT Top 5 city, COUNT (City) AS total_Employee FROM Employee
@@ -164,6 +165,7 @@ The third objective ofthis project, our main objectives are to:
 ###### Having COUNT (City) >15
 ###### ORDER BY COUNT (City) DESC
 ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/having%20%20greaterthan%2015.png)
+
 **3. Uncover the most frequently used pin codes by employees, revealing the pin codes that are utilized the most.**
 - Our final destination in this exploration involves unraveling the pin code puzzle. By pinpointing the most frequently used pin codes, we gain insights into the areas where employees are most active and possibly uncover trends related to commuting and residential preferences.
 - First I identified the number of employees using each pincode, Then I identified the TOP 1(most used)
