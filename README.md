@@ -1,6 +1,6 @@
 # STUDENT RECORD DATABASE PROJECT
 ## Introduction
-This project aims to showcase the creation and management of a database designed to store essential information about students. The database will consist of three main tables: Students Info, Health Records, and Performance. We would also dive into imported tables (Employee and Salary) into a different database to extract and uncover valuable insights and patterns within the data using SQL queries. This project requires setting up a database, creating tables, importing tables, defining constraints, and making modifications as required.
+This project aims to showcase the creation and management of a database designed to store essential information about students. The First database will consist of three main tables: Students Info, Health Records, and Performance. I would also dive into importing tables (Employee and Salary) into a Second database to extract and uncover valuable insights and patterns within the data using SQL queries. This project requires setting up databases, creating tables, importing tables, defining constraints, and making modifications as required.
 ## Project Objective 1
 1. Create a Database named “Students Record”
 2. Create the following tables in the database create:
@@ -13,6 +13,13 @@ This project aims to showcase the creation and management of a database designed
 6. Apply the following modifications to the table
    A. Change column name ‘’Subject” to ‘’Course” 
    B. Drop the “Age” column from the ‘Students Info’ table
+## Concept Demonstrated
+- Creating a Database and Tables
+- Defining Table Columns
+- Use of Constraints
+- Modifying Columns
+- Dropping Columns
+Through this task, I showcased my understanding of database design principles, constraints, data manipulation, and the ability to modify table structures. These concepts form the foundation of SQL-based data management and analysis, reflecting a key set of skills in the realm of relational databases.
 ## Solutions
 ##### 1. To create the data base named “Students Record”
    I used the syntax:
@@ -36,7 +43,6 @@ This project aims to showcase the creation and management of a database designed
 ##### 3. The ID has to be unique
 ##### 4. Where a student has no score, it should be ‘0’ by default
 ##### 5. Add a constraint that prevents the ID and Subject from taking null values
-
 
 iii. I Added the individual constraint where required, Then inserted each column's information.
 
@@ -85,6 +91,14 @@ The second objective of this project is to demonstrate the utilization of SQL qu
 3. Subset the employee table to have employee with date of birth above 1990
 4. Subset the salary table to show salaries less than 1 million and sort in an ascending order
 5. Modify email column of the employee table to contain just email without ‘@gmail.com’
+## Concept Demonstrated
+- Use of the SELECT Statement
+- Filtering with WHERE Clause
+- String Manipulation with LIKE Operator
+- Date Comparison
+- Sorting Data with ORDER BY Clause
+- Updating Data with UPDATE Statement
+Collectively, this task showcase my proficiency in querying and manipulating data using SQL. I demonstrated the ability to retrieve specific data subsets, filter rows based on conditions, work with patterns in strings, compare dates, sort data, and perform data updates. These skills are crucial for effective data analysis and management using SQL
 
 ## Solutions
 **1. Select the employee table and show the data where city is Mumbai and Delhi.**
@@ -124,6 +138,13 @@ The third objective ofthis project, our main objectives are to:
 1. Determine the total number of employees in the Employee table.
 2. Identify the top 5 cities with the highest employee counts and filter this list to include only cities with more than 15 employees.
 3. Uncover the most frequently used pin codes by employees, revealing the pin codes that are utilized the most.
+## Concept Demonstrated
+- Aggregation with COUNT Function
+- Aggregation and Filtering with GROUP BY and HAVING Clauses
+- Aggregation and Sorting with ORDER BY
+- Aggregation and Sorting with ORDER BY
+- Subqueries and Joins
+- Data Analysis and Decision Making
 ## Solutions
 **1. Determine the total number of employees in the Employee table.**
 - We begin by determining the total number of employees in our dataset. This foundational query sets the stage for further analysis and provides a clear understanding of the dataset's scale.
@@ -152,6 +173,8 @@ The third objective ofthis project, our main objectives are to:
 ###### ORDER BY COUNT(PINCODE) DESC
 ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/pincode%20used%20the%20most.png)
 
+## Conclusion
+In this project, I embarked on a comprehensive journey of data exploration and analysis using SQL queries on our employee dataset. Through exploring the provided SQL scripts, I learned the art of querying databases, filtering data, and extracting actionable insights. Overall, these tasks showcase my ability to perform data analysis using SQL, including aggregation, grouping, sorting, and potentially utilizing subqueries to retrieve and analyze data from multiple tables. These concepts are essential when working with databases and performing data-driven decision-making.
 
 
 
