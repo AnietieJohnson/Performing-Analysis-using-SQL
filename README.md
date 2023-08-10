@@ -1,6 +1,6 @@
 # STUDENT RECORD DATABASE PROJECT
 ## Introduction
-This project aims to showcase the creation and management of a database designed to store essential information about students. The database will consist of three main tables: Students Info, Health Records, and Performance. This project requires setting up a database, creating tables, defining constraints, and making modifications as required.
+This project aims to showcase the creation and management of a database designed to store essential information about students. The database will consist of three main tables: Students Info, Health Records, and Performance. We would also dive into imported tables (Employee and Salary) into a different database to extract and uncover valuable insights and patterns within the data using SQL queries. This project requires setting up a database, creating tables, importing tables, defining constraints, and making modifications as required.
 ## Project Objective 1
 1. Create a Database named “Students Record”
 2. Create the following tables in the database create:
@@ -112,9 +112,46 @@ The second objective of this project is to demonstrate the utilization of SQL qu
   ###### Syntax:UPDATE Employee
    ###### SET email = SUBSTRING(email, 1, CHARINDEX('@', email) - 1)
     ###### WHERE CHARINDEX('@', email) > 0;
-:-----------------------------------------------------------------------------------:|:----------------------------------------------------------------------------:
-  Before removing '@gmail.com'                                            |   After Removing '@gmail.com
-  :-----------------------------------------------------------------------------------:|:----------------------------------------------------------------------------:
-![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/before%20%20removing%20'%40gmail'.png)  |  ![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/after%20update%2C%20removing%20'%40gmail.com'.png)
+  
+  Before removing '@gmail.com'                 
+![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/before%20%20removing%20'%40gmail'.png)
+
+   After Removing '@gmail.com
+![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/after%20update%2C%20removing%20'%40gmail.com'.png)
 
 ## Project Objective 3
+The third objective ofthis project, our main objectives are to:
+1. Determine the total number of employees in the Employee table.
+2. Identify the top 5 cities with the highest employee counts and filter this list to include only cities with more than 15 employees.
+3. Uncover the most frequently used pin codes by employees, revealing the pin codes that are utilized the most.
+## Solutions
+**1. Determine the total number of employees in the Employee table.**
+- We begin by determining the total number of employees in our dataset. This foundational query sets the stage for further analysis and provides a clear understanding of the dataset's scale.
+###### Syntax: SELECT COUNT(empID) FROM Employee
+![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/Count%20of%20Employee.png)
+**2. Identify the top 5 cities with the highest employee counts and filter this list to include only cities with more than 15 employees.**
+- Our journey continues as we identify the top 5 cities with the highest number of employees. This initial list is then refined to spotlight cities with more than 15 employees, offering insights into where our workforce is concentrated.
+###### Syntax: SELECT Top 5 city, COUNT (City) AS total_Employee FROM Employee
+###### GROUP BY city
+###### ORDER BY COUNT (City) DESC
+![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/Top%205%20cities%20with%20highest%20number%20of%20employee.png)
+###### Syntax for 'cities with more than 15': SELECT Top 5 city, COUNT (City) AS total_Employee FROM Employee
+###### GROUP BY city
+###### Having COUNT (City) >15
+###### ORDER BY COUNT (City) DESC
+![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/having%20%20greaterthan%2015.png)
+**3. Uncover the most frequently used pin codes by employees, revealing the pin codes that are utilized the most.**
+- Our final destination in this exploration involves unraveling the pin code puzzle. By pinpointing the most frequently used pin codes, we gain insights into the areas where employees are most active and possibly uncover trends related to commuting and residential preferences.
+- First I identified the number of employees using each pincode, Then I identified the TOP 1(most used)
+###### Syntax: SELECT pincode, COUNT(PINCODE) FROM Employee
+###### GROUP BY pincode
+###### ORDER BY COUNT(PINCODE) DESC
+![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/number%20of%20employee%20using%20a%20%20code.png)
+###### Syntax 'For most used pincode: SELECT Top 1 pincode, COUNT(PINCODE) FROM Employee
+###### GROUP BY pincode
+###### ORDER BY COUNT(PINCODE) DESC
+![](https://github.com/AnietieJohnson/Performing-Analysis-using-SQL/blob/main/pincode%20used%20the%20most.png)
+
+
+
+
